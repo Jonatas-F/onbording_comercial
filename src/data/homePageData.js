@@ -2,7 +2,7 @@ export const heroSection = {
   eyebrow: 'Portal Comercial',
   title: 'Plataforma modular com visual dark para conteúdo comercial',
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    'Portal interno com trilhas de apoio ao time comercial, organizado em módulos responsivos para consulta rápida de processos, rotinas e treinamentos em vídeo.',
   primaryAction: {
     label: 'Explorar módulos',
     href: '#modulos',
@@ -16,24 +16,24 @@ export const heroSection = {
 
 export const highlightsSection = {
   eyebrow: 'Destaques',
-  title: 'Blocos reorganizáveis',
+  title: 'Conteúdo organizado para consulta prática',
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.',
+    'A estrutura do portal foi pensada para facilitar o acesso a processos, vídeos de treinamento e resumos operacionais da rotina comercial.',
   cards: [
     {
       eyebrow: 'Texto',
       title: 'Conteúdo em módulos',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.',
-    },
-    {
-      eyebrow: 'Imagem',
-      title: 'Cards visuais independentes',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.',
+      text: 'Cada tema é apresentado em blocos independentes, facilitando a leitura, a atualização e a navegação por assunto.',
     },
     {
       eyebrow: 'Vídeo',
-      title: 'Blocos flexíveis por resolução',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur.',
+      title: 'Treinamentos integrados',
+      text: 'Os módulos podem exibir vídeos diretamente na página, tornando a consulta mais prática para onboarding e reciclagem.',
+    },
+    {
+      eyebrow: 'Operação',
+      title: 'Consulta rápida do dia a dia',
+      text: 'Os resumos estruturados ajudam a equipe a revisar processos importantes sem depender apenas da memória ou de repasses informais.',
     },
   ],
 }
@@ -45,61 +45,61 @@ export const modulesSection = {
     {
       eyebrow: '01',
       title: 'Onboarding',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      text: 'Conteúdos introdutórios para ambientação da equipe comercial.',
       href: '/onboarding',
     },
     {
       eyebrow: '02',
       title: 'Processo de vendas',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      text: 'Etapas e lógica de condução da jornada comercial.',
       href: '/processo-vendas',
     },
     {
       eyebrow: '03',
       title: 'CRM Sankhya',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      text: 'Treinamentos de visão geral do CRM, matrículas e agendamento de oficinas.',
       href: '/crm-sankhya',
     },
     {
       eyebrow: '04',
       title: 'Abordagem e scripts',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      text: 'Referências para condução de contato e comunicação comercial.',
       href: '/abordagem-scripts',
     },
     {
       eyebrow: '05',
       title: 'Produto e oferta',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      text: 'Resumo dos diferenciais e da apresentação da oferta comercial.',
       href: '/produto-oferta',
     },
     {
       eyebrow: '06',
       title: 'Técnicas de venda',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      text: 'Boas práticas para condução, avanço e fechamento.',
       href: '/tecnicas-venda',
     },
     {
       eyebrow: '07',
       title: 'Indicadores e metas',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      text: 'Acompanhamento de performance e leitura dos principais indicadores.',
       href: '/indicadores-metas',
     },
     {
       eyebrow: '08',
       title: 'Objeções',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      text: 'Apoio para contornar dúvidas e barreiras comuns no atendimento.',
       href: '/objecoes',
     },
     {
       eyebrow: '09',
       title: 'Boas práticas e cases',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      text: 'Exemplos e aprendizados aplicáveis à rotina comercial.',
       href: '/boas-praticas-cases',
     },
     {
       eyebrow: '10',
       title: 'Biblioteca',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      text: 'Central de materiais e referências de apoio.',
       href: '/biblioteca',
     },
   ],

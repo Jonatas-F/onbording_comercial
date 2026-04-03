@@ -2,6 +2,9 @@ import HomePage from '../pages/HomePage'
 import OnboardingPage from '../pages/OnboardingPage'
 import ProcessoVendasPage from '../pages/ProcessoVendasPage'
 import CrmSankhyaPage from '../pages/CrmSankhyaPage'
+import CrmVisaoGeralPage from '../pages/CrmVisaoGeralPage'
+import CrmMatriculasPage from '../pages/CrmMatriculasPage'
+import CrmAgendamentoOficinasPage from '../pages/CrmAgendamentoOficinasPage'
 import AbordagemScriptsPage from '../pages/AbordagemScriptsPage'
 import ProdutoOfertaPage from '../pages/ProdutoOfertaPage'
 import TecnicasVendaPage from '../pages/TecnicasVendaPage'
@@ -31,6 +34,21 @@ export const appRoutes = [
     path: '/crm-sankhya',
     element: <CrmSankhyaPage />,
     label: 'CRM Sankhya',
+  },
+  {
+    path: '/crm-sankhya/visao-geral',
+    element: <CrmVisaoGeralPage />,
+    label: 'Visão geral do CRM',
+  },
+  {
+    path: '/crm-sankhya/matriculas',
+    element: <CrmMatriculasPage />,
+    label: 'Matrículas',
+  },
+  {
+    path: '/crm-sankhya/agendamento-oficinas',
+    element: <CrmAgendamentoOficinasPage />,
+    label: 'Agendamento de oficinas',
   },
   {
     path: '/abordagem-scripts',

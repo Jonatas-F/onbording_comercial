@@ -10,21 +10,52 @@ function TextBlock({ eyebrow, title, text }) {
   )
 }
 
+function VideoPlayer({ src, title }) {
+  if (!src) {
+    return (
+      <div className="media-placeholder media-placeholder--large">
+        <span>{title || 'Área de vídeo'}</span>
+      </div>
+    )
+  }
+
+  return (
+    <div className="video-frame">
+      <video
+        className="video-frame__player"
+        controls
+        preload="metadata"
+      >
+        <source
+          src={src}
+          type="video/mp4"
+        />
+        Seu navegador não suporta vídeo em HTML5.
+      </video>
+    </div>
+  )
+}
+
 export default function ModulePageTemplate({
   eyebrow,
   title,
   description,
   introLabel = 'Visão geral',
   introTitle = 'Resumo do módulo',
-  introText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.',
+  introText = 'Resumo introdutório do conteúdo.',
   contentTitle = 'Conteúdo do módulo',
-  contentDescription = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis.',
+  contentDescription = 'Principais pontos abordados nesta etapa.',
   textBlocks = [],
   videoEyebrow = 'Vídeo',
   videoTitle = 'Vídeo do módulo',
-  videoDescription = 'Espaço reservado para um vídeo explicativo relacionado a este conteúdo.',
+  videoDescription = 'Assista ao vídeo de apoio deste conteúdo.',
   videoPlaceholderLabel = 'Área de vídeo',
+  heroVideoUrl = '',
+  sectionVideoUrl = '',
 }) {
+  const heroVideoSource = heroVideoUrl || sectionVideoUrl
+  const sectionVideoSource = sectionVideoUrl || heroVideoUrl
+
   return (
     <main className="page page--home">
       <section className="hero-block">
@@ -35,9 +66,10 @@ export default function ModulePageTemplate({
         </div>
 
         <div className="hero-block__media">
-          <div className="media-placeholder media-placeholder--large">
-            <span>{videoPlaceholderLabel}</span>
-          </div>
+          <VideoPlayer
+            src={heroVideoSource}
+            title={videoPlaceholderLabel}
+          />
         </div>
       </section>
 
@@ -76,9 +108,10 @@ export default function ModulePageTemplate({
         />
 
         <div className="hero-block__media">
-          <div className="media-placeholder media-placeholder--large">
-            <span>{videoPlaceholderLabel}</span>
-          </div>
+          <VideoPlayer
+            src={sectionVideoSource}
+            title={videoPlaceholderLabel}
+          />
         </div>
       </section>
     </main>

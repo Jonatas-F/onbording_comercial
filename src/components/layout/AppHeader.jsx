@@ -4,7 +4,7 @@ const navigationLinks = [
   { to: '/', label: 'Home' },
   { to: '/onboarding', label: 'Onboarding' },
   { to: '/processo-vendas', label: 'Processo de vendas' },
-  { to: '/crm-sankhya', label: 'CRM Sankhya' },
+  { to: '/crm-sankhya', label: 'CRM' },
   { to: '/abordagem-scripts', label: 'Abordagem e scripts' },
   { to: '/produto-oferta', label: 'Produto e oferta' },
   { to: '/tecnicas-venda', label: 'Técnicas de venda' },

@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import AppHeader from './components/layout/AppHeader'
-import { appRoutes } from './routes/appRoutes'
+import { appRoutes } from './routes/AppRoutes'
 
 export default function App() {
   return (
