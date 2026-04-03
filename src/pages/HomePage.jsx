@@ -1,6 +1,5 @@
 import HeroSection from '../components/blocks/HeroSection'
-import ModuleCard from '../components/ui/ModuleCard'
-import SectionHeading from '../components/ui/SectionHeading'
+import ModuleSection from '../components/blocks/ModuleSection'
 import { highlightsSection, modulesSection } from '../data/homePageData'
 
 export default function HomePage() {
@@ -8,48 +7,22 @@ export default function HomePage() {
     <main className="page page--home">
       <HeroSection />
 
-      <section
+      <ModuleSection
         id="destaques"
-        className="content-section"
-      >
-        <SectionHeading
-          eyebrow={highlightsSection.eyebrow}
-          title={highlightsSection.title}
-          description={highlightsSection.description}
-        />
+        eyebrow={highlightsSection.eyebrow}
+        title={highlightsSection.title}
+        description={highlightsSection.description}
+        cards={highlightsSection.cards}
+        columns="three"
+      />
 
-        <div className="module-grid module-grid--three">
-          {highlightsSection.cards.map((card) => (
-            <ModuleCard
-              key={card.title}
-              eyebrow={card.eyebrow}
-              title={card.title}
-              text={card.text}
-            />
-          ))}
-        </div>
-      </section>
-
-      <section
+      <ModuleSection
         id="modulos"
-        className="content-section"
-      >
-        <SectionHeading
-          eyebrow={modulesSection.eyebrow}
-          title={modulesSection.title}
-        />
-
-        <div className="module-grid module-grid--four">
-          {modulesSection.cards.map((card) => (
-            <ModuleCard
-              key={card.title}
-              eyebrow={card.eyebrow}
-              title={card.title}
-              text={card.text}
-            />
-          ))}
-        </div>
-      </section>
+        eyebrow={modulesSection.eyebrow}
+        title={modulesSection.title}
+        cards={modulesSection.cards}
+        columns="four"
+      />
     </main>
   )
 }
