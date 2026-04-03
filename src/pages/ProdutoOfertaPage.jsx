@@ -1,224 +1,176 @@
 import SectionHeading from '../components/ui/SectionHeading'
 
-const offerBlocks = [
-  {
-    eyebrow: 'Produto principal',
-    title: 'ART SUITE',
-    text: 'O ART SUITE é o principal produto da SAGA: uma formação modular e completa, composta por quatro grandes áreas criativas — Design, Video, 3D e Game. Cada Suite tem duração de 6 meses e pode ser contratada separadamente ou em composição de trilha mais ampla.',
-  },
-  {
-    eyebrow: 'Modelo',
-    title: 'Formação modular com progressão clara',
-    text: 'A lógica de produto facilita a personalização da jornada. O aluno pode iniciar por uma frente específica e expandir depois, o que ajuda o comercial a adaptar a proposta ao momento, objetivo e orçamento de cada perfil.',
-  },
-  {
-    eyebrow: 'Mercado',
-    title: 'Produto alinhado à prática profissional',
-    text: 'A apresentação posiciona o curso como formação conectada ao mercado real, com repertório criativo, ferramentas profissionais, portfólio, acompanhamento ao vivo e uso prático de IA como apoio de produtividade.',
-  },
-]
-
 const suiteCards = [
   {
-    eyebrow: 'Suite 01',
+    eyebrow: 'Trilha 01',
     title: 'Design',
-    text: 'Foco em design gráfico, identidade visual, composição, narrativa visual, UX/UI, branding e portfólio. Ferramentas destacadas: Illustrator, Photoshop, Figma e apoio de IA.',
-    image: 'https://cdn.saga.com.br/files01/Apresentacao/design.png',
+    text: 'Trilha com 6 meses de duração, voltada para criação visual, identidade, composição, comunicação gráfica e ferramentas muito utilizadas no mercado criativo.',
   },
   {
-    eyebrow: 'Suite 02',
-    title: 'Video',
-    text: 'Abrange edição de vídeo, storytelling, motion graphics, conteúdo para redes sociais e uso de IA no audiovisual. Ferramentas destacadas: Premiere Pro e After Effects.',
-    image: 'https://cdn.saga.com.br/files01/Apresentacao/ONDEMAND2.jpeg',
+    eyebrow: 'Trilha 02',
+    title: 'Audiovisual',
+    text: 'Trilha com 6 meses de duração, focada em edição, motion, narrativa visual, criação de conteúdo e desenvolvimento técnico no universo audiovisual.',
   },
   {
-    eyebrow: 'Suite 03',
+    eyebrow: 'Trilha 03',
     title: '3D',
-    text: 'Formação em modelagem, texturização, escultura digital, visualização e portfólio 3D. Ferramentas destacadas: Blender, ZBrush, Substance Painter e engines real time.',
-    image: 'https://cdn.saga.com.br/files01/Apresentacao/3d.png',
+    text: 'Trilha com 6 meses de duração, pensada para modelagem, construção tridimensional, visualização e desenvolvimento técnico em 3D.',
   },
   {
-    eyebrow: 'Suite 04',
+    eyebrow: 'Trilha 04',
     title: 'Game',
-    text: 'Foco em game design, UI/UX para games, programação aplicada, publicação e mercado. Ferramentas destacadas: Unity, Unreal Engine e recursos de IA para desenvolvimento.',
-    image: 'https://cdn.saga.com.br/files01/Apresentacao/game.png',
+    text: 'Trilha com 6 meses de duração, conectada à criação de jogos, lógica aplicada, desenvolvimento e visão de mercado para quem quer atuar nesse segmento.',
   },
 ]
 
-const differentiators = [
+const pricingCards = [
   {
-    eyebrow: 'Diferencial',
-    title: 'Aulas 100% ao vivo',
-    text: 'As suítes são apresentadas com aulas ao vivo, professor titular e auxiliar em sala, reforçando proximidade, interação, dúvidas em tempo real e evolução acompanhada.',
+    eyebrow: 'Oferta avulsa',
+    title: '1 trilha',
+    text: 'Valor cheio: R$ 679,90. Com desconto aplicado pelo vendedor: R$ 459,90. Essa condição vale para quem opta por adquirir apenas uma trilha.',
   },
   {
-    eyebrow: 'Diferencial',
-    title: 'Uso de IA com visão de mercado',
-    text: 'A IA aparece como ferramenta de apoio para geração de ideias, referências, automação de tarefas e ganho de produtividade, sem substituir o pensamento criativo do aluno.',
+    eyebrow: 'Pacote',
+    title: '2, 3 ou 4 trilhas',
+    text: 'Valor cheio por trilha no pacote: R$ 419,90. Com desconto aplicado pelo vendedor: R$ 329,90 por trilha. Essa condição vale para quem fecha um pacote com duas, três ou quatro trilhas de uma vez.',
   },
   {
-    eyebrow: 'Diferencial',
-    title: 'Portfólio e empregabilidade',
-    text: 'A construção de portfólio e a conexão com funções reais de mercado aparecem como parte central da oferta, ajudando o comercial a vender evolução profissional e não apenas curso.',
-  },
-]
-
-const supportOffers = [
-  {
-    eyebrow: 'Benefício',
-    title: 'Adobe Pass SAGA',
-    text: 'Parceria exclusiva entre SAGA e Adobe para alunos elegíveis. A apresentação destaca valor de R$ 80/mês, sem aumento no segundo ano, sem multa e com acesso ao padrão de mercado desde o início.',
-    href: 'https://hub.saga.com.br/adobepass',
-  },
-  {
-    eyebrow: 'Ecossistema',
-    title: 'HUB SAGA',
-    text: 'Plataforma educacional proprietária com acompanhamento, comunidade, cursos extras, dados e experiência digital do aluno. É um forte argumento de valor complementar à oferta principal.',
-    href: 'https://hub.saga.com.br',
-  },
-  {
-    eyebrow: 'Conteúdo extra',
-    title: 'Cursos On-Demand',
-    text: 'A apresentação também destaca mais de 30 cursos on-demand no ecossistema do HUB, com lançamentos ao longo do ano e conteúdos atualizados em tecnologia, criação e mercado.',
-    href: 'https://hub.saga.com.br/cursos/ondemand',
+    eyebrow: 'Regra comercial',
+    title: 'Matrícula e mensalidade têm o mesmo valor',
+    text: 'O valor pago na matrícula é o mesmo valor das mensalidades. Exemplo: se a condição aplicada for R$ 459,90, as mensalidades também serão R$ 459,90. Se a condição for R$ 329,90, as mensalidades seguem em R$ 329,90.',
   },
 ]
 
-function SuiteVisualCard({ eyebrow, title, text, image }) {
-  return (
-    <article className="module-card">
-      <div
-        style={{
-          width: '100%',
-          height: '220px',
-          borderRadius: '18px',
-          overflow: 'hidden',
-          marginBottom: '18px',
-          border: '1px solid rgba(255,255,255,0.08)',
-          background: '#111',
-        }}
-      >
-        <img
-          src={image}
-          alt={title}
-          style={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-          }}
-        />
-      </div>
+const durationCards = [
+  {
+    eyebrow: 'Duração',
+    title: '1 trilha = 6 meses',
+    text: 'Quando o aluno compra apenas uma trilha, ele terá uma jornada de 6 meses.',
+  },
+  {
+    eyebrow: 'Duração',
+    title: '2 trilhas = 12 meses',
+    text: 'Se o aluno fechar duas trilhas, a jornada total passa a ser de 12 meses.',
+  },
+  {
+    eyebrow: 'Duração',
+    title: '3 trilhas = 18 meses',
+    text: 'Ao contratar três trilhas, o aluno passa a ter 18 meses de formação.',
+  },
+  {
+    eyebrow: 'Duração',
+    title: '4 trilhas = 24 meses',
+    text: 'Quando o aluno fecha o percurso completo com quatro trilhas, a formação totaliza 24 meses.',
+  },
+]
 
-      <span className="module-card__eyebrow">{eyebrow}</span>
-      <h3 className="module-card__title">{title}</h3>
-      <p className="module-card__text">{text}</p>
-    </article>
-  )
-}
+const commercialRules = [
+  {
+    eyebrow: 'Pagamento',
+    title: 'Vencimento padrão entre dia 5 e dia 8',
+    text: 'Como regra padrão da operação, o vencimento das mensalidades deve ficar entre o dia 5 e o dia 8 do mês.',
+  },
+  {
+    eyebrow: 'Posicionamento',
+    title: 'Falar de valor com contexto',
+    text: 'O preço deve ser apresentado depois de explicar a estrutura da trilha, a duração, o formato ao vivo, a proposta de formação e os diferenciais da SAGA.',
+  },
+  {
+    eyebrow: 'Condução',
+    title: 'Mostrar lógica da jornada',
+    text: 'Mais importante do que falar só o preço é mostrar que o aluno pode começar com uma trilha específica ou montar um pacote maior, conforme o objetivo e o momento dele.',
+  },
+]
+
+const argumentCards = [
+  {
+    eyebrow: 'Argumento',
+    title: 'Entrada mais acessível por uma trilha',
+    text: 'Para leads que querem começar de forma mais leve, a possibilidade de fechar apenas uma trilha ajuda a reduzir barreira de entrada e facilita a decisão inicial.',
+  },
+  {
+    eyebrow: 'Argumento',
+    title: 'Pacote gera melhor percepção de custo-benefício',
+    text: 'Quando o aluno já demonstra interesse maior na área, o pacote com duas, três ou quatro trilhas aumenta a percepção de continuidade, profundidade e economia por trilha.',
+  },
+  {
+    eyebrow: 'Argumento',
+    title: 'Mensalidade previsível facilita a venda',
+    text: 'A regra de matrícula com o mesmo valor da mensalidade ajuda muito na clareza comercial, porque o aluno entende com facilidade quanto vai pagar ao longo da jornada.',
+  },
+]
 
 export default function ProdutoOfertaPage() {
   return (
     <main className="page page--home">
       <section className="hero-block">
         <div className="hero-block__content">
-          <span className="hero-block__eyebrow">Produto e Oferta</span>
-          <h1 className="hero-block__title">Como apresentar valor real da SAGA</h1>
+          <span className="hero-block__eyebrow">Produto e oferta</span>
+          <h1 className="hero-block__title">Trilhas, pacotes e lógica comercial da oferta</h1>
           <p className="hero-block__description">
-            Esta página consolida os principais argumentos comerciais da
-            apresentação institucional sobre produto: ART SUITE, trilhas
-            criativas, aulas ao vivo, uso de IA, HUB SAGA e benefícios como o
-            Adobe Pass. O objetivo é transformar conteúdo institucional em fala
-            comercial mais forte, segura e bem estruturada.
+            Esta página organiza a estrutura comercial das quatro trilhas da
+            SAGA, mostrando duração, valores, lógica de pacote, regra de
+            mensalidade e pontos que o vendedor precisa dominar para apresentar
+            a proposta com clareza e segurança.
           </p>
 
           <div className="hero-block__actions">
             <a
-              href="https://hub.saga.com.br/adobepass"
-              target="_blank"
-              rel="noreferrer"
+              href="#precos"
               className="button button--primary"
             >
-              Ver Adobe Pass
+              Ver preços
             </a>
 
             <a
-              href="https://hub.saga.com.br/cursos/ondemand"
-              target="_blank"
-              rel="noreferrer"
+              href="#argumentos"
               className="button button--ghost"
             >
-              Ver on-demand
+              Ver argumentos
             </a>
           </div>
         </div>
 
         <div className="hero-block__media">
           <div className="media-placeholder media-placeholder--large">
-            <img
-              src="https://cdn.saga.com.br/files01/Apresentacao/social-bg.png"
-              alt="ART SUITE SAGA"
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-                borderRadius: '20px',
-                opacity: 0.92,
-              }}
-            />
+            <span>Trilhas, duração, matrícula e mensalidades</span>
           </div>
         </div>
       </section>
 
       <section className="content-section">
         <SectionHeading
-          eyebrow="Panorama"
-          title="Estrutura da oferta principal"
-          description="A apresentação institucional posiciona o ART SUITE como produto principal da SAGA, apoiado por modularidade, repertório de mercado e argumentos claros de diferenciação."
+          eyebrow="Trilhas"
+          title="As quatro frentes principais da oferta"
+          description="Cada trilha possui 6 meses de duração e pode ser vendida separadamente ou em composição de pacote com duas, três ou quatro trilhas."
         />
 
         <div className="module-grid module-grid--three">
-          {offerBlocks.map((block) => (
+          {suiteCards.map((item) => (
             <article
-              key={block.title}
+              key={item.title}
               className="module-card"
             >
-              <span className="module-card__eyebrow">{block.eyebrow}</span>
-              <h3 className="module-card__title">{block.title}</h3>
-              <p className="module-card__text">{block.text}</p>
+              <span className="module-card__eyebrow">{item.eyebrow}</span>
+              <h3 className="module-card__title">{item.title}</h3>
+              <p className="module-card__text">{item.text}</p>
             </article>
           ))}
         </div>
       </section>
 
-      <section className="content-section">
+      <section
+        id="precos"
+        className="content-section"
+      >
         <SectionHeading
-          eyebrow="Suites"
-          title="As quatro frentes centrais do ART SUITE"
-          description="Essas trilhas ajudam o comercial a explicar o produto com mais clareza, conectando linguagem criativa, ferramentas e possibilidades de carreira."
+          eyebrow="Preços"
+          title="Valores autorizados para apresentação comercial"
+          description="Os valores abaixo resumem a regra comercial informada para uma trilha avulsa e para pacotes com duas, três ou quatro trilhas."
         />
 
         <div className="module-grid module-grid--three">
-          {suiteCards.map((card) => (
-            <SuiteVisualCard
-              key={card.title}
-              eyebrow={card.eyebrow}
-              title={card.title}
-              text={card.text}
-              image={card.image}
-            />
-          ))}
-        </div>
-      </section>
-
-      <section className="content-section">
-        <SectionHeading
-          eyebrow="Diferenciais"
-          title="Argumentos que fortalecem a proposta"
-          description="A apresentação não vende apenas conteúdo. Ela reforça modelo, acompanhamento, tecnologia, construção de portfólio e aderência ao mercado real."
-        />
-
-        <div className="module-grid module-grid--three">
-          {differentiators.map((item) => (
+          {pricingCards.map((item) => (
             <article
               key={item.title}
               className="module-card"
@@ -233,24 +185,66 @@ export default function ProdutoOfertaPage() {
 
       <section className="content-section">
         <SectionHeading
-          eyebrow="Complementos"
-          title="Ofertas e benefícios que ampliam valor"
-          description="Além do curso principal, a apresentação reforça benefícios e recursos complementares que ajudam a sustentar a percepção de valor da proposta."
+          eyebrow="Duração"
+          title="Tempo total de jornada conforme o pacote"
+          description="Como cada trilha dura 6 meses, o vendedor pode traduzir facilmente o impacto de cada combinação na jornada total do aluno."
         />
 
-        <div className="module-grid module-grid--three">
-          {supportOffers.map((item) => (
-            <a
+        <div className="module-grid module-grid--four">
+          {durationCards.map((item) => (
+            <article
               key={item.title}
-              href={item.href}
-              target="_blank"
-              rel="noreferrer"
-              className="module-card module-card--link"
+              className="module-card"
             >
               <span className="module-card__eyebrow">{item.eyebrow}</span>
               <h3 className="module-card__title">{item.title}</h3>
               <p className="module-card__text">{item.text}</p>
-            </a>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="content-section">
+        <SectionHeading
+          eyebrow="Regras"
+          title="Pontos comerciais que precisam ficar claros"
+          description="Além do preço, o vendedor precisa dominar a lógica de vencimento, previsibilidade de pagamento e construção de proposta."
+        />
+
+        <div className="module-grid module-grid--three">
+          {commercialRules.map((item) => (
+            <article
+              key={item.title}
+              className="module-card"
+            >
+              <span className="module-card__eyebrow">{item.eyebrow}</span>
+              <h3 className="module-card__title">{item.title}</h3>
+              <p className="module-card__text">{item.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section
+        id="argumentos"
+        className="content-section"
+      >
+        <SectionHeading
+          eyebrow="Argumentação"
+          title="Como vender melhor a estrutura da oferta"
+          description="Esses pontos ajudam o vendedor a não transformar o preço em assunto isolado, mas sim em parte de uma proposta maior de valor."
+        />
+
+        <div className="module-grid module-grid--three">
+          {argumentCards.map((item) => (
+            <article
+              key={item.title}
+              className="module-card"
+            >
+              <span className="module-card__eyebrow">{item.eyebrow}</span>
+              <h3 className="module-card__title">{item.title}</h3>
+              <p className="module-card__text">{item.text}</p>
+            </article>
           ))}
         </div>
       </section>
