@@ -1,5 +1,6 @@
 import HeroSection from '../components/blocks/HeroSection'
 import ModuleCard from '../components/ui/ModuleCard'
+import SectionHeading from '../components/ui/SectionHeading'
 
 export default function HomePage() {
   return (
@@ -10,14 +11,11 @@ export default function HomePage() {
         id="destaques"
         className="content-section"
       >
-        <div className="section-heading">
-          <span className="section-heading__eyebrow">Destaques</span>
-          <h2 className="section-heading__title">Blocos reorganizáveis</h2>
-          <p className="section-heading__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-            odio. Praesent libero. Sed cursus ante dapibus diam.
-          </p>
-        </div>
+        <SectionHeading
+          eyebrow="Destaques"
+          title="Blocos reorganizáveis"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam."
+        />
 
         <div className="module-grid module-grid--three">
           <ModuleCard
@@ -42,10 +40,10 @@ export default function HomePage() {
         id="modulos"
         className="content-section"
       >
-        <div className="section-heading">
-          <span className="section-heading__eyebrow">Estrutura</span>
-          <h2 className="section-heading__title">Módulos do portal</h2>
-        </div>
+        <SectionHeading
+          eyebrow="Estrutura"
+          title="Módulos do portal"
+        />
 
         <div className="module-grid module-grid--four">
           <ModuleCard
