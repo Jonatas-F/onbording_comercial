@@ -1,7 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import AppHeader from './components/layout/AppHeader'
-import HomePage from './pages/HomePage'
-import NotFoundPage from './pages/NotFoundPage'
+import { appRoutes } from './routes/appRoutes'
 
 export default function App() {
   return (
@@ -9,14 +8,13 @@ export default function App() {
       <AppHeader />
 
       <Routes>
-        <Route
-          path="/"
-          element={<HomePage />}
-        />
-        <Route
-          path="*"
-          element={<NotFoundPage />}
-        />
+        {appRoutes.map((route) => (
+          <Route
+            key={route.path}
+            path={route.path}
+            element={route.element}
+          />
+        ))}
       </Routes>
     </div>
   )
