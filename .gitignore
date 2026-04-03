@@ -1,0 +1,59 @@
+# Portal Comercial React Base
+
+Estrutura base para um portal comercial em React com Vite, organizada em módulos responsivos e preparada para expansão por blocos de conteúdo.
+
+## Visão geral
+
+Este projeto foi pensado para funcionar como um portal institucional/comercial com:
+
+- visual dark
+- blocos modulares
+- áreas de texto, imagem e vídeo separadas
+- reorganização responsiva conforme a resolução
+- arquitetura escalável por páginas, módulos e componentes
+
+## Estrutura principal
+
+```bash
+portal-comercial-react-base/
+├── index.html
+├── package.json
+├── vite.config.js
+├── README.md
+├── .gitignore
+├── public/
+└── src/
+    ├── main.jsx
+    ├── App.jsx
+    ├── app/
+    ├── assets/
+    │   └── styles/
+    │       ├── global.css
+    │       ├── base/
+    │       ├── tokens/
+    │       ├── layout/
+    │       ├── motion/
+    │       └── utilities/
+    ├── components/
+    │   ├── layout/
+    │   ├── ui/
+    │   └── blocks/
+    ├── modules/
+    │   ├── home/
+    │   ├── onboarding/
+    │   ├── processo-vendas/
+    │   ├── crm-sankhya/
+    │   ├── abordagem-scripts/
+    │   ├── produto-oferta/
+    │   ├── tecnicas-venda/
+    │   ├── indicadores-metas/
+    │   ├── objecoes/
+    │   ├── boas-praticas-cases/
+    │   └── biblioteca/
+    ├── pages/
+    ├── routes/
+    ├── hooks/
+    ├── services/
+    ├── config/
+    ├── data/
+    └── utils/
