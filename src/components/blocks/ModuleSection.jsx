@@ -32,6 +32,7 @@ export default function ModuleSection({
             eyebrow={card.eyebrow}
             title={card.title}
             text={card.text}
+            href={card.href}
           />
         ))}
       </div>
