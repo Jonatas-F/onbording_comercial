@@ -1,5 +1,8 @@
 import SectionHeading from '../components/ui/SectionHeading'
 
+const ASSETS_BASE =
+  'https://cdn.saga.com.br/files01/comercial_treinamento/Assets'
+
 const impactBlocks = [
   {
     eyebrow: 'Credibilidade',
@@ -21,49 +24,49 @@ const impactBlocks = [
 const portfolioWorks = [
   {
     name: 'Lucas Silva',
-    thumbnail: '/cases/case-01-lucas-silva.png',
+    thumbnail: `${ASSETS_BASE}/case-01-lucas-silva.png`,
     url: 'https://www.artstation.com/lucasemsilva',
     note: 'Portfólio artístico apresentado no material institucional.',
   },
   {
     name: 'Atila Salviano',
-    thumbnail: '/cases/case-02-atila-salviano.png',
+    thumbnail: `${ASSETS_BASE}/case-02-atila-salviano.png`,
     url: 'https://www.atilasalvianoart.com/bio',
     note: 'Referência de portfólio com presença autoral forte.',
   },
   {
     name: 'Pedro Caraca',
-    thumbnail: '/cases/case-03-pedro-caraca.png',
+    thumbnail: `${ASSETS_BASE}/case-03-pedro-caraca.png`,
     url: 'https://www.artstation.com/pedrocaraca',
     note: 'Case visual usado para reforçar repertório de mercado.',
   },
   {
     name: 'Thiago Vilarinho',
-    thumbnail: '/cases/case-04-thiago-vilarinho.png',
+    thumbnail: `${ASSETS_BASE}/case-04-thiago-vilarinho.png`,
     url: 'https://thiagovilarinho.com',
     note: 'Trabalho apresentado como referência de evolução profissional.',
   },
   {
     name: 'Raul Sales',
-    thumbnail: '/cases/case-05-raul-sales.png',
+    thumbnail: `${ASSETS_BASE}/case-05-raul-sales.png`,
     url: 'https://www.artstation.com/raulsales',
     note: 'Exemplo de portfolio visual ligado ao mercado criativo.',
   },
   {
     name: 'Daniel Sanches',
-    thumbnail: '/cases/case-06-daniel-sanches.png',
+    thumbnail: `${ASSETS_BASE}/case-06-daniel-sanches.png`,
     url: 'https://www.artstation.com/daniboy',
     note: 'Thumbnail institucional vinculada a portfólio externo.',
   },
   {
     name: 'Guilherme Rambelli',
-    thumbnail: '/cases/case-07-guilherme-rambelli.png',
+    thumbnail: `${ASSETS_BASE}/case-07-guilherme-rambelli.png`,
     url: 'https://www.artstation.com/grambelli',
     note: 'Portfólio destacado na apresentação como referência de mercado.',
   },
   {
     name: 'Leticia Gillett',
-    thumbnail: '/cases/case-08-leticia-gillett.png',
+    thumbnail: `${ASSETS_BASE}/case-08-leticia-gillett.png`,
     url: 'https://www.artstation.com/leticiarg',
     note: 'Portfólio apresentado como exemplo de qualidade e carreira.',
   },
@@ -301,8 +304,7 @@ export default function BoasPraticasCasesPage() {
           <div
             className="media-placeholder media-placeholder--large"
             style={{
-              backgroundImage:
-                "linear-gradient(180deg, rgba(8,8,8,0.15) 0%, rgba(8,8,8,0.38) 100%), url('/cases/case-08-leticia-gillett.png')",
+              backgroundImage: `linear-gradient(180deg, rgba(8,8,8,0.15) 0%, rgba(8,8,8,0.38) 100%), url(${ASSETS_BASE}/case-08-leticia-gillett.png)`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}

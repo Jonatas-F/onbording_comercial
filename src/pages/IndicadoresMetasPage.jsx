@@ -48,9 +48,9 @@ const practicalGoalCards = [
     text: 'Com conversão de 20% por atendimento, a referência é cerca de 100 atendimentos realizados no mês. Com 25%, cerca de 80 atendimentos. Com 30%, cerca de 67 atendimentos.',
   },
   {
-    eyebrow: 'Base diária',
-    title: 'Leitura da operação atual',
-    text: 'Com aproximadamente 60 leads por dia para um time de cerca de 6 vendedores, existe volume suficiente para trabalhar agenda, reaproveitamento de base e prospecção complementar. O resultado depende da qualidade da distribuição, do comparecimento e da execução comercial.',
+    eyebrow: 'Meta desejável',
+    title: '30 matrículas para vendedores maduros',
+    text: 'Para vendedores já maduros na operação, a meta desejável passa a ser 30 matrículas no mês. Com conversão de 20% por atendimento, isso representa cerca de 150 atendimentos realizados. Com 25%, cerca de 120 atendimentos. Com 30%, cerca de 100 atendimentos.',
   },
 ]
 
@@ -210,7 +210,7 @@ export default function IndicadoresMetasPage() {
       <section className="content-section">
         <SectionHeading
           eyebrow="Metas"
-          title="Meta inicial e meta padrão"
+          title="Meta inicial, meta padrão e meta desejável"
           description="A leitura da meta deve sempre considerar matrícula líquida e o volume de atendimento necessário para chegar ao resultado esperado."
         />
 
