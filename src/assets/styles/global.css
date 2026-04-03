@@ -113,7 +113,7 @@ video {
   top: 0;
   z-index: 30;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: var(--space-4);
   width: min(calc(100% - 32px), var(--container));
@@ -126,6 +126,7 @@ video {
   display: inline-flex;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
 }
 
 .topbar__mark {
@@ -145,21 +146,27 @@ video {
 }
 
 .topbar__nav {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 10px;
+  width: 100%;
   padding: 6px;
   border: 1px solid var(--border);
-  border-radius: var(--radius-pill);
+  border-radius: 28px;
   background: rgba(255, 255, 255, 0.03);
   box-shadow: var(--shadow-soft);
 }
 
 .topbar__nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px 14px;
   border-radius: var(--radius-pill);
   color: var(--text-secondary);
   font-size: 0.92rem;
+  white-space: nowrap;
   transition:
     background var(--transition-base),
     color var(--transition-base),
@@ -460,6 +467,17 @@ video {
   margin-top: 28px;
 }
 
+@media (max-width: 1280px) {
+  .topbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .topbar__nav {
+    justify-content: flex-start;
+  }
+}
+
 @media (max-width: 1200px) {
   .hero-block {
     grid-template-columns: 1fr;
@@ -482,13 +500,11 @@ video {
 
 @media (max-width: 860px) {
   .topbar {
-    flex-direction: column;
-    align-items: stretch;
     padding-top: 14px;
   }
 
   .topbar__nav {
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 
