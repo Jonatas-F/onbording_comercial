@@ -1,3 +1,19 @@
+export const heroSection = {
+  eyebrow: 'Portal Comercial',
+  title: 'Plataforma modular com visual dark para conteúdo comercial',
+  description:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  primaryAction: {
+    label: 'Explorar módulos',
+    href: '#modulos',
+  },
+  secondaryAction: {
+    label: 'Ver destaques',
+    href: '#destaques',
+  },
+  mediaLabel: 'Imagem / vídeo principal',
+}
+
 export const highlightsSection = {
   eyebrow: 'Destaques',
   title: 'Blocos reorganizáveis',
