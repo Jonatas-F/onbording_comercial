@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import SectionHeading from '../components/ui/SectionHeading'
-import ModuleCard from '../components/ui/ModuleCard'
 
 const crmOverviewBlocks = [
   {
@@ -40,6 +39,109 @@ const crmTrainingCards = [
     href: '/crm-sankhya/agendamento-oficinas',
   },
 ]
+
+function SankhyaTrainingCard({ card }) {
+  return (
+    <Link
+      to={card.href}
+      className="module-card module-card--link"
+      style={{
+        borderColor: 'rgba(78, 201, 140, 0.22)',
+        background:
+          'radial-gradient(circle at top left, rgba(60, 179, 113, 0.22), transparent 38%), linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(14, 42, 28, 0.42) 100%)',
+        boxShadow:
+          'inset 0 1px 0 rgba(255,255,255,0.04), 0 18px 40px rgba(6, 38, 22, 0.34)',
+      }}
+    >
+      <span
+        className="module-card__eyebrow"
+        style={{
+          borderColor: 'rgba(116, 224, 172, 0.28)',
+          background: 'rgba(44, 122, 78, 0.16)',
+          color: '#d9ffea',
+        }}
+      >
+        {card.eyebrow}
+      </span>
+
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: '16px',
+          marginTop: '18px',
+        }}
+      >
+        <h3
+          className="module-card__title"
+          style={{
+            margin: 0,
+          }}
+        >
+          {card.title}
+        </h3>
+
+        <div
+          aria-hidden="true"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: '52px',
+            height: '52px',
+            minWidth: '52px',
+            borderRadius: '16px',
+            border: '1px solid rgba(116, 224, 172, 0.24)',
+            background: 'rgba(44, 122, 78, 0.16)',
+            color: '#d9ffea',
+            fontSize: '1.15rem',
+            lineHeight: 1,
+          }}
+        >
+          ▶
+        </div>
+      </div>
+
+      <p
+        className="module-card__text"
+        style={{
+          marginTop: '18px',
+        }}
+      >
+        {card.text}
+      </p>
+
+      <div
+        style={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: '10px',
+          marginTop: '22px',
+          padding: '12px 14px',
+          width: 'fit-content',
+          borderRadius: '999px',
+          border: '1px solid rgba(116, 224, 172, 0.24)',
+          background: 'rgba(44, 122, 78, 0.16)',
+          color: '#e7fff1',
+          fontSize: '0.92rem',
+          fontWeight: 600,
+          letterSpacing: '0.01em',
+        }}
+      >
+        <span
+          aria-hidden="true"
+          style={{
+            fontSize: '0.95rem',
+          }}
+        >
+          🎥
+        </span>
+        Clique aqui para visualizar o vídeo
+      </div>
+    </Link>
+  )
+}
 
 export default function CrmSankhyaPage() {
   return (
@@ -116,12 +218,9 @@ export default function CrmSankhyaPage() {
 
         <div className="module-grid module-grid--three">
           {crmTrainingCards.map((card) => (
-            <ModuleCard
+            <SankhyaTrainingCard
               key={card.title}
-              eyebrow={card.eyebrow}
-              title={card.title}
-              text={card.text}
-              href={card.href}
+              card={card}
             />
           ))}
         </div>

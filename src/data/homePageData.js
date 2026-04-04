@@ -50,7 +50,7 @@ export const modulesSection = {
     },
     {
       eyebrow: '02',
-      title: 'Processo de vendas',
+      title: 'Funil Comercial',
       text: 'Etapas e lógica de condução da jornada comercial.',
       href: '/processo-vendas',
     },
@@ -62,8 +62,8 @@ export const modulesSection = {
     },
     {
       eyebrow: '04',
-      title: 'Abordagem e scripts',
-      text: 'Referências para condução de contato e comunicação comercial.',
+      title: 'Abordagem, scripts e objeções',
+      text: 'Referências para condução de contato, comunicação comercial e quebra de objeções.',
       href: '/abordagem-scripts',
     },
     {
@@ -74,21 +74,21 @@ export const modulesSection = {
     },
     {
       eyebrow: '06',
-      title: 'Técnicas de venda',
-      text: 'Boas práticas para condução, avanço e fechamento.',
-      href: '/tecnicas-venda',
-    },
-    {
-      eyebrow: '07',
       title: 'Indicadores e metas',
       text: 'Acompanhamento de performance e leitura dos principais indicadores.',
       href: '/indicadores-metas',
     },
     {
+      eyebrow: '07',
+      title: 'Pós-venda',
+      text: 'Transição do cliente após o fechamento e continuidade da jornada.',
+      href: '/pos-venda',
+    },
+    {
       eyebrow: '08',
-      title: 'Objeções',
-      text: 'Apoio para contornar dúvidas e barreiras comuns no atendimento.',
-      href: '/objecoes',
+      title: 'NEPPO',
+      text: 'Manual e visão geral da plataforma omnichannel utilizada no atendimento.',
+      href: '/neppo',
     },
     {
       eyebrow: '09',
@@ -98,9 +98,9 @@ export const modulesSection = {
     },
     {
       eyebrow: '10',
-      title: 'Biblioteca',
-      text: 'Central de materiais e referências de apoio.',
-      href: '/biblioteca',
+      title: 'HUB',
+      text: 'Central de materiais, acessos e referências de apoio ao ecossistema digital.',
+      href: '/hub',
     },
   ],
 }

@@ -4,14 +4,14 @@ const navigationLinks = [
   { to: '/', label: 'Home' },
   { to: '/onboarding', label: 'Onboarding' },
   { to: '/processo-vendas', label: 'Funil Comercial' },
-  { to: '/crm-sankhya', label: 'CRM' },
-  { to: '/abordagem-scripts', label: 'Abordagem e scripts' },
+  { to: '/crm-sankhya', label: 'Sankhya' },
+  { to: '/neppo', label: 'NEPPO' },
+  { to: '/pos-venda', label: 'Pós-venda' },
+  { to: '/boas-praticas-cases', label: 'Cases' },
+  { to: '/hub', label: 'HUB' },
+  { to: '/abordagem-scripts', label: 'Abordagem, scripts e objeções' },
   { to: '/produto-oferta', label: 'Produto e oferta' },
-  { to: '/tecnicas-venda', label: 'Técnicas de venda' },
   { to: '/indicadores-metas', label: 'Indicadores e metas' },
-  { to: '/objecoes', label: 'Objeções' },
-  { to: '/boas-praticas-cases', label: 'Boas práticas e cases' },
-  { to: '/biblioteca', label: 'HUB' },
 ]
 
 export default function AppHeader() {

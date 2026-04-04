@@ -93,7 +93,7 @@ const adobePassHighlights = [
   },
 ]
 
-export default function BibliotecaPage() {
+export default function HubPage() {
   return (
     <main className="page page--home">
       <section className="hero-block">

@@ -1,3 +1,4 @@
+import { Navigate } from 'react-router-dom'
 import HomePage from '../pages/HomePage'
 import OnboardingPage from '../pages/OnboardingPage'
 import ProcessoVendasPage from '../pages/ProcessoVendasPage'
@@ -7,11 +8,11 @@ import CrmMatriculasPage from '../pages/CrmMatriculasPage'
 import CrmAgendamentoOficinasPage from '../pages/CrmAgendamentoOficinasPage'
 import AbordagemScriptsPage from '../pages/AbordagemScriptsPage'
 import ProdutoOfertaPage from '../pages/ProdutoOfertaPage'
-import TecnicasVendaPage from '../pages/TecnicasVendaPage'
 import IndicadoresMetasPage from '../pages/IndicadoresMetasPage'
-import ObjecoesPage from '../pages/ObjecoesPage'
 import BoasPraticasCasesPage from '../pages/BoasPraticasCasesPage'
-import BibliotecaPage from '../pages/BibliotecaPage'
+import HubPage from '../pages/HubPage'
+import PosVendaPage from '../pages/PosVendaPage'
+import NeppoPage from '../pages/NeppoPage'
 import NotFoundPage from '../pages/NotFoundPage'
 
 export const appRoutes = [
@@ -28,7 +29,7 @@ export const appRoutes = [
   {
     path: '/processo-vendas',
     element: <ProcessoVendasPage />,
-    label: 'Processo de vendas',
+    label: 'Funil Comercial',
   },
   {
     path: '/crm-sankhya',
@@ -53,7 +54,7 @@ export const appRoutes = [
   {
     path: '/abordagem-scripts',
     element: <AbordagemScriptsPage />,
-    label: 'Abordagem e scripts',
+    label: 'Abordagem, scripts e objeções',
   },
   {
     path: '/produto-oferta',
@@ -61,19 +62,19 @@ export const appRoutes = [
     label: 'Produto e oferta',
   },
   {
-    path: '/tecnicas-venda',
-    element: <TecnicasVendaPage />,
-    label: 'Técnicas de venda',
-  },
-  {
     path: '/indicadores-metas',
     element: <IndicadoresMetasPage />,
     label: 'Indicadores e metas',
   },
   {
-    path: '/objecoes',
-    element: <ObjecoesPage />,
-    label: 'Objeções',
+    path: '/pos-venda',
+    element: <PosVendaPage />,
+    label: 'Pós-venda',
+  },
+  {
+    path: '/neppo',
+    element: <NeppoPage />,
+    label: 'NEPPO',
   },
   {
     path: '/boas-praticas-cases',
@@ -81,10 +82,37 @@ export const appRoutes = [
     label: 'Boas práticas e cases',
   },
   {
-    path: '/biblioteca',
-    element: <BibliotecaPage />,
-    label: 'Biblioteca',
+    path: '/hub',
+    element: <HubPage />,
+    label: 'HUB',
   },
+
+  {
+    path: '/objecoes',
+    element: <Navigate to="/abordagem-scripts" replace />,
+    label: 'Redirect Objeções',
+  },
+  {
+    path: '/tecnicas-venda',
+    element: <Navigate to="/abordagem-scripts" replace />,
+    label: 'Redirect Técnicas de venda',
+  },
+  {
+    path: '/passagem-bastao-onboarding',
+    element: <Navigate to="/pos-venda" replace />,
+    label: 'Redirect Pós-venda',
+  },
+  {
+    path: '/neppe',
+    element: <Navigate to="/neppo" replace />,
+    label: 'Redirect NEPPO',
+  },
+  {
+    path: '/biblioteca',
+    element: <Navigate to="/hub" replace />,
+    label: 'Redirect HUB antigo',
+  },
+
   {
     path: '*',
     element: <NotFoundPage />,
