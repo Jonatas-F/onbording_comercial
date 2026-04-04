@@ -11,7 +11,7 @@ const navigationLinks = [
   { to: '/indicadores-metas', label: 'Indicadores e metas' },
   { to: '/objecoes', label: 'Objeções' },
   { to: '/boas-praticas-cases', label: 'Boas práticas e cases' },
-  { to: '/biblioteca', label: 'Biblioteca' },
+  { to: '/biblioteca', label: 'HUB' },
 ]
 
 export default function AppHeader() {
