@@ -36,6 +36,33 @@ function VideoPlayer({ src, title }) {
   )
 }
 
+function HeroMedia({ heroImageUrl, heroImageAlt, heroVideoUrl, videoPlaceholderLabel }) {
+  if (heroImageUrl) {
+    return (
+      <div className="media-placeholder media-placeholder--large">
+        <img
+          src={heroImageUrl}
+          alt={heroImageAlt || 'Imagem de capa do módulo'}
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            borderRadius: '20px',
+            opacity: 0.96,
+          }}
+        />
+      </div>
+    )
+  }
+
+  return (
+    <VideoPlayer
+      src={heroVideoUrl}
+      title={videoPlaceholderLabel}
+    />
+  )
+}
+
 export default function ModulePageTemplate({
   eyebrow,
   title,
@@ -52,6 +79,8 @@ export default function ModulePageTemplate({
   videoPlaceholderLabel = 'Área de vídeo',
   heroVideoUrl = '',
   sectionVideoUrl = '',
+  heroImageUrl = '',
+  heroImageAlt = '',
 }) {
   const heroVideoSource = heroVideoUrl || sectionVideoUrl
   const sectionVideoSource = sectionVideoUrl || heroVideoUrl
@@ -66,9 +95,11 @@ export default function ModulePageTemplate({
         </div>
 
         <div className="hero-block__media">
-          <VideoPlayer
-            src={heroVideoSource}
-            title={videoPlaceholderLabel}
+          <HeroMedia
+            heroImageUrl={heroImageUrl}
+            heroImageAlt={heroImageAlt}
+            heroVideoUrl={heroVideoSource}
+            videoPlaceholderLabel={videoPlaceholderLabel}
           />
         </div>
       </section>
