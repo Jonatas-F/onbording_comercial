@@ -36,8 +36,8 @@ const processoVendasBlocks = [
 export default function ProcessoVendasPage() {
   return (
     <ModulePageTemplate
-      eyebrow="Processo de vendas"
-      title="Fluxo comercial do lead até o fechamento"
+      eyebrow="Funil Comercial"
+      title="Funil Comercial"
       description="Esta página resume o funil comercial da operação: entrada por LPs e site, triagem inicial no WhatsApp com IA, passagem pela SDR, atendimento do closer e uso de bases complementares para reativação e fechamento."
       introLabel="Panorama"
       introTitle="Como funciona o fluxo comercial da operação"
@@ -49,6 +49,8 @@ export default function ProcessoVendasPage() {
       videoTitle="Treinamento: funil e processo comercial"
       videoDescription="Assista ao vídeo para entender a lógica das LPs, da triagem via WhatsApp, da passagem pela SDR, do papel do closer e das demais fontes de lead trabalhadas pela operação."
       videoPlaceholderLabel="Vídeo do fluxo comercial"
+      heroImageUrl="https://cdn.saga.com.br/files01/comercial_treinamento/Assets/funil.png"
+      heroImageAlt="Funil Comercial"
       heroVideoUrl="https://cdn.saga.com.br/files01/comercial_treinamento/Onbording_srm/Funil.mp4"
       sectionVideoUrl="https://cdn.saga.com.br/files01/comercial_treinamento/Onbording_srm/Funil.mp4"
     />
