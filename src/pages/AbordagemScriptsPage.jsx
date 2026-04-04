@@ -150,7 +150,17 @@ export default function AbordagemScriptsPage() {
 
         <div className="hero-block__media">
           <div className="media-placeholder media-placeholder--large">
-            <span>Triagem no WhatsApp, NEPPO e condução comercial</span>
+            <img
+              src="https://cdn.saga.com.br/files01/comercial_treinamento/Assets/Dicas.png"
+              alt="Dicas de abordagem comercial"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                borderRadius: '20px',
+                opacity: 0.96,
+              }}
+            />
           </div>
         </div>
       </section>
