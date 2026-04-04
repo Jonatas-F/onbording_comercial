@@ -5,21 +5,25 @@ const suiteCards = [
     eyebrow: 'Trilha 01',
     title: 'Design',
     text: 'Trilha com 6 meses de duração, voltada para criação visual, identidade, composição, comunicação gráfica e ferramentas muito utilizadas no mercado criativo.',
+    image: 'https://cdn.saga.com.br/files01/Apresentacao/design.png',
   },
   {
     eyebrow: 'Trilha 02',
     title: 'Audiovisual',
     text: 'Trilha com 6 meses de duração, focada em edição, motion, narrativa visual, criação de conteúdo e desenvolvimento técnico no universo audiovisual.',
+    image: 'https://cdn.saga.com.br/files01/Apresentacao/ONDEMAND2.jpeg',
   },
   {
     eyebrow: 'Trilha 03',
     title: '3D',
     text: 'Trilha com 6 meses de duração, pensada para modelagem, construção tridimensional, visualização e desenvolvimento técnico em 3D.',
+    image: 'https://cdn.saga.com.br/files01/Apresentacao/3d.png',
   },
   {
     eyebrow: 'Trilha 04',
     title: 'Game',
     text: 'Trilha com 6 meses de duração, conectada à criação de jogos, lógica aplicada, desenvolvimento e visão de mercado para quem quer atuar nesse segmento.',
+    image: 'https://cdn.saga.com.br/files01/Apresentacao/game.png',
   },
 ]
 
@@ -100,6 +104,38 @@ const argumentCards = [
   },
 ]
 
+function SuiteVisualCard({ item }) {
+  return (
+    <article className="module-card">
+      <div
+        style={{
+          width: '100%',
+          height: '220px',
+          borderRadius: '18px',
+          overflow: 'hidden',
+          marginBottom: '18px',
+          border: '1px solid rgba(255,255,255,0.08)',
+          background: '#111',
+        }}
+      >
+        <img
+          src={item.image}
+          alt={item.title}
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+          }}
+        />
+      </div>
+
+      <span className="module-card__eyebrow">{item.eyebrow}</span>
+      <h3 className="module-card__title">{item.title}</h3>
+      <p className="module-card__text">{item.text}</p>
+    </article>
+  )
+}
+
 export default function ProdutoOfertaPage() {
   return (
     <main className="page page--home">
@@ -133,7 +169,17 @@ export default function ProdutoOfertaPage() {
 
         <div className="hero-block__media">
           <div className="media-placeholder media-placeholder--large">
-            <span>Trilhas, duração, matrícula e mensalidades</span>
+            <img
+              src="https://cdn.saga.com.br/files01/Apresentacao/social-bg.png"
+              alt="Trilhas SAGA"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                borderRadius: '20px',
+                opacity: 0.92,
+              }}
+            />
           </div>
         </div>
       </section>
@@ -147,14 +193,10 @@ export default function ProdutoOfertaPage() {
 
         <div className="module-grid module-grid--three">
           {suiteCards.map((item) => (
-            <article
+            <SuiteVisualCard
               key={item.title}
-              className="module-card"
-            >
-              <span className="module-card__eyebrow">{item.eyebrow}</span>
-              <h3 className="module-card__title">{item.title}</h3>
-              <p className="module-card__text">{item.text}</p>
-            </article>
+              item={item}
+            />
           ))}
         </div>
       </section>
