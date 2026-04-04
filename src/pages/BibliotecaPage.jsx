@@ -57,18 +57,21 @@ const quickLinks = [
     title: 'HUB SAGA',
     text: 'Plataforma principal de experiência e acompanhamento do aluno.',
     href: 'https://hub.saga.com.br',
+    tone: 'default',
   },
   {
     eyebrow: 'Cursos',
     title: 'On-demand',
-    text: 'Biblioteca de cursos extras disponível no ecossistema da plataforma.',
+    text: 'Hub de cursos extras disponível no ecossistema da plataforma.',
     href: 'https://hub.saga.com.br/cursos/ondemand',
+    tone: 'hub',
   },
   {
     eyebrow: 'Benefício',
     title: 'Adobe Pass SAGA',
     text: 'Parceria exclusiva com a Adobe para alunos elegíveis da SAGA.',
     href: 'https://hub.saga.com.br/adobepass',
+    tone: 'adobe',
   },
 ]
 
@@ -98,11 +101,10 @@ export default function BibliotecaPage() {
           <span className="hero-block__eyebrow">HUB SAGA</span>
           <h1 className="hero-block__title">Recursos digitais que ampliam a experiência do aluno</h1>
           <p className="hero-block__description">
-            Esta página reaproveita o conteúdo institucional sobre o HUB SAGA
-            para transformar a antiga área de biblioteca em um espaço de apoio
-            digital. Aqui ficam concentrados os argumentos de tecnologia,
-            acompanhamento, cursos extras, IA, governança e benefícios
-            complementares como o Adobe Pass.
+            Esta página concentra os argumentos institucionais sobre o HUB SAGA
+            em um espaço de apoio digital. Aqui ficam organizados os destaques
+            de tecnologia, acompanhamento, cursos extras, IA, governança e
+            benefícios complementares como o Adobe Pass.
           </p>
 
           <div className="hero-block__actions">
@@ -198,7 +200,7 @@ export default function BibliotecaPage() {
         <SectionHeading
           eyebrow="Links"
           title="Acessos rápidos do ecossistema SAGA"
-          description="Esses links estavam representados na apresentação e ajudam a compor uma navegação útil dentro do portal."
+          description="Esses links ajudam a compor uma navegação útil dentro do portal e agora já ficam preparados para receber variações visuais de destaque."
         />
 
         <div className="module-grid module-grid--three">
@@ -208,7 +210,7 @@ export default function BibliotecaPage() {
               href={item.href}
               target="_blank"
               rel="noreferrer"
-              className="module-card module-card--link"
+              className={`module-card module-card--link module-card--${item.tone}`}
             >
               <span className="module-card__eyebrow">{item.eyebrow}</span>
               <h3 className="module-card__title">{item.title}</h3>
