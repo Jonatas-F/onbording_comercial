@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 const navigationLinks = [
   { to: '/', label: 'Home' },
   { to: '/onboarding', label: 'Onboarding' },
-  { to: '/processo-vendas', label: 'Processo de vendas' },
+  { to: '/processo-vendas', label: 'Funil Comercial' },
   { to: '/crm-sankhya', label: 'CRM' },
   { to: '/abordagem-scripts', label: 'Abordagem e scripts' },
   { to: '/produto-oferta', label: 'Produto e oferta' },
